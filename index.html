@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arthur Carvalho Brito | Economics</title>
   <meta name="description" content="Arthur Carvalho Brito is a Ph.D. candidate in Economics at Duke University and a 2026–27 job market candidate.">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -38,13 +38,11 @@
     body.theme-luka .nav-right { display: flex; align-items: center; gap: 22px; }
     body.theme-luka .nav-right a { color: var(--luka-secondary); font-size: 14px; font-weight: 500; }
     body.theme-luka .nav-right a:hover { color: var(--luka-accent); }
-    body.theme-luka .image.avatar.initials-avatar {
-      width: 220px; height: 220px; margin: 0 auto 50px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      background: #e8e6e1; color: #65635e; font-size: 66px; font-weight: 300;
-      letter-spacing: -0.06em; box-shadow: 0 6px 24px var(--luka-shadow);
+    body.theme-luka .image.avatar.profile-photo {
+      display: block; width: 220px; height: 290px; margin: 0 auto 50px;
+      border-radius: 12px; object-fit: cover; object-position: center 28%;
+      box-shadow: 0 6px 24px var(--luka-shadow);
     }
-    :root[data-theme="dark"] body.theme-luka .image.avatar.initials-avatar { background: #383a36; color: #cbc7bf; }
     body.theme-luka .site-name { font-size: 20px; white-space: nowrap; letter-spacing: -0.02em; }
     body.theme-luka .site-role { margin: 0 0 5px; color: var(--luka-secondary); font-size: 14px; }
     body.theme-luka .site-email { margin-bottom: 20px; }
@@ -64,7 +62,7 @@
       body.theme-luka .nav-left a { font-size: 15px; }
       body.theme-luka .nav-right { gap: 10px; }
       body.theme-luka .nav-right a { font-size: 12px; }
-      body.theme-luka .image.avatar.initials-avatar { width: 148px; height: 148px; margin-bottom: 30px; font-size: 48px; }
+      body.theme-luka .image.avatar.profile-photo { width: 148px; height: 195px; margin-bottom: 30px; }
     }
   </style>
 </head>
@@ -83,7 +81,7 @@
   <div class="wrapper">
     <header class="sidebar">
       <div class="profile-card">
-        <div class="image avatar initials-avatar" role="img" aria-label="Arthur Carvalho Brito initials">ACB</div>
+        <img class="image avatar profile-photo" src="assets/img/arthur-portrait.png" alt="Arthur Carvalho Brito" width="220" height="290">
         <h1 class="site-name">Arthur Carvalho Brito</h1>
         <p class="site-role">Ph.D. Candidate in Economics<br>Duke University</p>
         <p class="site-email">acp83@duke.edu</p>
